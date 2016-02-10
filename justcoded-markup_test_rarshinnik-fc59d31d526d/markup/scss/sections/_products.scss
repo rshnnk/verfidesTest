@@ -1,0 +1,133 @@
+.products{
+	text-align: center;
+	color: $gray;
+	padding: 10px 0 50px;
+	@include media ('<tablet'){
+		padding: 0 0 40px;
+	}
+	h1{
+		margin: 0 0 63px;
+	}
+	.description{
+		margin: 0 auto 50px;
+		width: 80%;
+		@include media ('<tablet'){
+			display: block;
+			width: 87%;
+			margin: 0 auto 13px; 
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+	.btn{
+		margin: 0 auto 50px;
+		@include media ('<tablet'){
+			margin: 0 auto 40px;
+		}
+	}
+}
+.article{
+	width: 50%;
+	float:left;
+	color: $gray;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	margin: 0 0 35px;
+	padding: 0 0 0 13px;
+	@include media ('<tablet'){
+		width: 100%;
+		border-bottom: 1px solid $light-gray;
+		padding: 0 0 4px 18px;
+		margin: 0 0 6px;
+	}
+	h2{
+		color: #1a3255;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 28px;
+		margin: 0;
+		@include media ('<tablet'){
+			font-size: 14px;
+		}
+	}
+	p{
+		margin: 0 0 10px;
+		@include media ('<tablet'){
+			margin: 0;
+		}
+	}
+	a{
+		font-weight: 700;
+		padding: 0;
+		border: none;
+		text-align:left;
+		color: $blue;
+		@include media ('<tablet'){
+			font-weight: 700;
+			font-size: 12px;
+		}
+	}
+	.fa{
+		padding: 0 5px;
+	}
+}
+.brochures{
+	width: 70%;
+	margin:0 auto;
+	color: inherit;
+	@include media ('<tablet'){
+		width: 87%;
+	}
+	.description{
+		margin: 0 auto 38px;
+		width: 100%;
+		display: block;
+		@include media ('<tablet'){
+			margin: 0 0 20px;
+		}
+	}
+	.item{
+		width: 50%;
+		float: left;
+		&:last-child{
+			padding: 0 35px 0 0;
+			@include media ('<tablet'){
+				display: none;
+			}
+		}
+		@include media ('<tablet'){
+			width: 100%;	
+		}
+	}
+	img{
+		margin: 0 0 10px;
+		@include media ('<tablet'){
+			max-width: 83px;	
+			margin: 0;
+		}
+	}
+	h3{
+		font-size: 18px;
+		line-height: 23px;
+		margin: 0;
+		@include media ('<tablet'){
+			font-size: 14px;
+			line-height: 18px;
+			margin: 0;
+		}
+	}
+	a{
+		color: $blue;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 30px;
+		@include media ('<tablet'){
+			font-size: 12px;
+		}
+	}
+	.fa{
+		transform: scaleY(-1);
+		padding: 0 8px;
+	}
+}

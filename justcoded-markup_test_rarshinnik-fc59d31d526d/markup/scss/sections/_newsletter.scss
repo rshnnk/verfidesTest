@@ -1,0 +1,78 @@
+.newsletter{
+	background: $blue;
+	padding: 75px 0 80px;
+	text-align: center;
+	@include media ('<tablet'){
+		padding: 36px 0 40px;
+	}
+	.description{
+		color: $white;
+		margin:  0 0 40px;
+		@include media ('<tablet'){
+			padding: 0 15px;
+			font-size: 14px;
+			line-height: 17px;
+			margin: 0 0 15px;
+		}
+	}
+	.wrap{
+		width: 85%;
+		margin: 0 auto;
+		position: static;
+		@include media ('<tablet'){
+			width: 100%;
+		}
+	}
+	input[type="text"], input[type="email"]{
+		width: 48%;
+		float: left;
+		margin: 0 0 40px;
+		color: #ABB1BB;
+		border: none;
+		font-weight: 700;
+		font-size: 14px;
+		background: #2a4061;
+		padding: 15px 17px;
+		&:first-child{
+			margin: 0 29px 0 0;
+			@include media ('<desktop'){
+				margin: 0 0 10px 0;
+			}
+			@include media ('<tablet'){
+				margin: 0 0 17px 0;
+			}
+		}
+		@include media ('<desktop'){
+			width: 100%;
+		}
+		@include media ('<tablet'){
+			padding: 10px 6px;
+			margin: 0 0 20px;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 19px;
+		}
+	}
+	.btn{
+		background: none;
+		color: $white;
+		border: 1px solid $white;
+		margin: 0 auto;
+		&:hover{
+			background: $white;
+			color: #1a3255;
+		}
+	}
+	.fa{
+		padding: 0 7px;
+	}
+}
+.managament-wrapper{
+	@include media ('<tablet'){
+		margin: 0 20px;
+	}
+}
+.newsletter-form{
+	width: 87%;
+	margin: 0 auto;
+}

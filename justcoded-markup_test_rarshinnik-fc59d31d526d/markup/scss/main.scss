@@ -1,0 +1,61 @@
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 480px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'widescreen': 1200px
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+@import 'vendors/normalize';
+
+@import 'base/variables';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+@import "components/fonts";
+@import 'components/navbar';
+@import "components/buttons";
+@import "sections/main-section";
+@import "sections/article-box";
+@import "sections/carousel-items";
+@import "sections/items";
+@import "sections/rate-box";
+@import "sections/products";
+@import "sections/newsletter";
+@import "sections/contact-box";
+@import "sections/form-box";
+@import "sections/description-box";
+@import "sections/footer";
+
+#wrapper {
+  width: 100%;
+  @include media ('<tablet'){
+    overflow-x: hidden;
+  }
+}
+.container{
+  @extend %clearfix;
+  max-width: 996px;
+  margin: 0 auto;
+  text-align: center;
+  @include media ('<desktop'){
+    padding: 0 10px;
+  }
+}

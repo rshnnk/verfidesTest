@@ -1,0 +1,64 @@
+.form-group{
+	padding: 69px 0 100px;
+	background: $blue;
+	text-align: center;
+	@include media ('<tablet'){
+		display: none;
+	}
+	h1, .description{
+		color: $white;
+	}
+	h1{
+		&:after{
+			background: $white;
+		}
+	}
+	.description{
+		line-height: 27px;
+		margin: 0 0 16px;
+	}
+	input, textarea{
+		border: none;
+		font-weight: bold;
+		font-size: 14px;
+		background: #2a4061;
+		padding: 15px 17px;
+		width: 100%;
+	}
+	input{
+		margin: 0 0 20px;
+	}
+	textarea{
+		min-height: 190px;
+	}
+	.btn{
+		background: none;
+		border: 1px solid $white;
+		color: $white;
+		margin: 0 auto;
+		&:hover{
+			background: $white;
+			color: #1a3255;
+		}
+	}
+}
+.question-form{
+	width: 74%;
+	margin: 0 auto;
+	color: #abb1bb;
+	font-weight: bold;
+	text-align: left;
+	.form-inner{
+		width: 50%;
+		float: left;
+		margin: 0 0 20px;
+		padding: 0 15px 0 0;
+	}
+	.form-inner:nth-child(3){
+		padding: 0 0 0 15px;
+	}
+	p{
+		font-weight: inherit;
+		margin: 0 0 9px 8px;
+	}
+}

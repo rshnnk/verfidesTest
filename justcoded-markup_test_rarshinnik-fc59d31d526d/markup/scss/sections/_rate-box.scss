@@ -1,0 +1,46 @@
+.rate-box{
+	min-height: 472px;
+	background: url('../images/map.png') no-repeat center center;
+	background-size: cover;
+	padding: 125px 0 0 0;
+	@include media ('<tablet'){
+		min-height: 295px;
+		padding: 70px 0 0 0;
+	}
+	h1{
+		color: $white;
+		margin: 0 0 55px;
+		&:after{
+			background: $white;
+			bottom: -30px;
+			@include media ('<tablet'){
+				bottom: -19px;
+			}
+		}
+		@include media ('<tablet'){
+			margin: 0 0 35px;
+		}
+	}
+	.description{
+		color: $white;
+		margin: 0 0 32px;
+		@include media ('<tablet'){
+			width: 80%;
+			margin: 0 auto 16px;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+	.btn{
+		color: $white;
+		margin: 0 auto;
+		border: 1px solid $white;
+		&:hover{
+			background: $white;
+			color: #1a3255;
+		}
+		.fa{
+			color: inherit;
+		}
+	}
+}

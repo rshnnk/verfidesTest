@@ -1,0 +1,31 @@
+h1{
+	position: relative;
+	font: italic 300 36px "Open Sans", sans-serif;
+	margin: 0 0 60px;
+	&:after{
+		position: absolute;
+		content: '';
+		display: block;
+		width: 250px;
+		height: 1px;
+		background: #769eca;
+		bottom: -28px;
+		left: 50%;
+		margin: 0 -125px;
+		@include media ('<tablet'){
+			width: 125px;
+			bottom: -18px;
+			margin: 0 -65px;
+		}
+	}
+	@include media ('<tablet'){
+    	font: italic 300 22px/22px "Open Sans", sans-serif;
+    	margin: 0 0 35px;
+  	}
+}
+.description{
+	font: normal 18px/22px $base-font-family;
+	@include media ('<tablet'){
+		font: 14px/14px "Open Sans", sans-serif;
+	}
+}

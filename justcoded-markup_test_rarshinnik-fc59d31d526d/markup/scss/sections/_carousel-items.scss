@@ -1,0 +1,203 @@
+.carousel-items{
+	text-align: center;
+	padding: 87px 0 62px;
+	color: $gray;
+	@include media ('<tablet'){
+		padding: 32px 0 23px;
+	}
+	h1{
+		@include media ('<tablet'){
+			margin: 0 0 28px;
+		}
+	}
+}
+.owl-carousel {
+	position: relative;
+	padding: 30px 0 0;
+	overflow: hidden;
+	&:before, &:after{
+		@include media ('<desktop'){
+			display: none;
+		}
+		content: ('');
+		position: absolute;
+		top: 0;
+		width: 182px;
+		height: 100%;
+		background: linear-gradient(to right, rgba(255,255,255,1) 30%,rgba(255,255,255,0.01) 99%,rgba(255,255,255,0) 100%);
+		z-index: 2;
+	}
+	&:before{
+		left: 0;
+	}
+	&:after{
+		right: 0;
+		transform: scaleX(-1);
+	}
+	@include media ('<tablet'){
+		display: none;
+		padding: 0;
+	}
+}
+.owl-wrapper{
+	@include media ('<tablet'){
+		transform: none !important;
+		cursor: default;
+	}
+}
+.owl-wrapper-outer{
+	z-index: 1;
+}
+.owl-buttons {
+	@extend %clearfix;
+	height: 100%;
+}
+.owl-controls {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.owl- {
+	&prev, &next {
+		@extend %clearfix;
+		@include media ('<tablet'){
+			display: none;	
+		}
+		background: none;
+		position: relative;
+		height: 100%;
+		z-index: 4;
+		span{
+			background: url('../images/arrow.png') no-repeat;
+			display: block;
+			width: 37px;
+			height: 72px;
+			position: absolute;
+			top: 25%;
+		}
+	}
+	&prev {
+		float: left;
+		left: 13.2%;
+		@include media ('<desktop'){
+			left: 10px;
+		}
+		span{
+			transform: scaleX(-1);
+		}
+	}
+	&next {
+		float: right;
+		right: 16%;
+		@include media ('<desktop'){
+			right: 50px;
+		}
+	}
+}
+.carousel-item {
+	text-align: center;
+	@include media ('<tablet'){
+		display: table;
+		width: 100%;
+		padding: 11px 30px;
+		border-bottom: 1px solid #ddd;
+	}
+	h2 {
+		padding: 0 10px;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 300;
+		@include media ('<tablet'){
+			display: table-cell;
+			vertical-align: middle;
+			text-align: left;
+			font-size: 14px;
+		} 
+	}
+}
+.round {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	margin: 0 auto 21px;
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+	@include media ('<tablet'){
+		width: 53px;
+		height: 53px;
+		margin: 0;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	img {
+		display: inline-block;
+		vertical-align: middle;
+		@include media ('<tablet'){
+			width: 20px;
+		}
+	}
+}
+.owl-item {
+	&:nth-child(1) {
+		.round {
+			background: #769eca;
+		}
+	}
+	&:nth-child(2) {
+		.round {
+			background: #1a3255;
+		}
+	}
+	&:nth-child(3) {
+		.round {
+			background: #1a3255;
+		}
+	}
+	&:nth-child(4) {
+		.round {
+			background: #869bac;
+		}
+	}
+	&:nth-child(5) {
+		.round {
+			background: #92a4bc;
+		}
+	}
+	&:nth-child(6) {
+		.round {
+			background: #55575a;
+		}
+	}
+	&:nth-child(7) {
+		.round {
+			background: #c0b5cf;
+		}
+	}
+	&:nth-child(8) {
+		.round {
+			background: #c0b5cf;
+		}
+	}
+	&:nth-child(9) {
+		.round {
+			background: #cfb5c1;
+		}
+	}
+	&:last-child{
+		.carousel-item{
+			@include media ('<tablet'){
+				border-bottom: none;
+			}
+		}
+	}
+	@include media ('<tablet'){
+		clear: both;
+		margin: 0;
+	}
+}
